@@ -1,2 +1,0 @@
-# Code-Wars
- Code Wars

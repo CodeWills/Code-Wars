@@ -1,10 +1,11 @@
-// Write a function insertDash(num)/InsertDash(int num) that will insert dashes ('-') 
-// between each two odd numbers in num. For example: if num is 454793 the output should be 4547-9-3. Don't count zero as an odd number.
+// Write a simple regex to validate a username.
 
-function insertDash(num) {
-  var n = num.toString().split('');
-  for (var x = 0; x < n.length; x ++){
-    if(n[x] % 2 && n[x -1] % 2)n.splice(x,0, '-');
-  }
-  return n.join("");
+// Allowed characters are:
+
+// -lowercase letters -numbers -underscore
+
+// length shoould be between 4 and 16 characters.
+
+function validateUsr(username) {
+  return /^[0-9a-z_]{4,16}$/.test(username)
 }

@@ -1,5 +1,4 @@
 # Code-Wars
- Code Wars
 
 Code Wars
 
